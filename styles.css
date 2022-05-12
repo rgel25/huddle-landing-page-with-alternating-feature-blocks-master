@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+  --font-body: "Open Sans", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--very-dark-cyan);
+}
+
+img {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-logo img {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.nav-btn button {
+  color: var(--very-dark-cyan);
+  background-color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: none;
+  border-radius: 1.25rem;
+  font-weight: 700;
+  font-size: 0.6em;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  height: 100vh;
+  background: url(./images/bg-hero-mobile.svg);
+  background-color: var(--very-pale-cyan);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 650px;
+  margin: auto;
+}
+
+.landing-page h1 {
+  margin: 2rem;
+  margin-bottom: 0rem;
+  font-size: 1.5em;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+.landing-page p {
+  margin: 2rem;
+  font-size: 0.9em;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.landing-image {
+  margin: 2rem;
+  max-width: 400px;
+}
+
+.main-btn {
+  color: var(--very-pale-cyan);
+  width: 15rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border: none;
+  background-color: var(--pink);
+  border-radius: 2rem;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 0.6em;
+}
+
+.feature-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 650px;
+}
+
+.card-header {
+  width: 70%;
+  margin: auto;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body h2 {
+  font-size: 1.2em;
+  margin: 1rem;
+}
+
+.card-body p {
+  padding: 0 1rem;
+  font-size: 0.8em;
+}
+
+.invitation {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  bottom: -80px;
+}
+
+.invitations-card {
+  background-color: white;
+  border-radius: 0.625rem;
+  max-width: 650px;
+  margin: auto;
+}
+
+.invitations-card h2 {
+  font-size: 0.9em;
+  margin-bottom: 2rem;
+  color: var(--very-dark-cyan);
+  font-family: var(--font-heading);
+}
+
+.invitations-card button {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-pale-cyan);
+  padding: 1rem;
+  padding-top: 10rem;
+}
+
+.footer-logo {
+  width: 10rem;
+}
+
+.contact-pair {
+  display: flex;
+  padding: 0.5rem;
+  font-size: 0.8em;
+}
+
+.contact-logo {
+  margin-right: 2rem;
+}
+
+.contact-logo img {
+  width: 20px;
+}
+
+.footer-links p {
+  margin: 1rem;
+  margin-left: 0.5rem;
+}
+
+.footer-end {
+  margin-top: 5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+}
+
+.social i {
+  padding: 0.5rem;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.social i:hover {
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
+
+.social i:nth-of-type(1) {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  opacity: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-logo img {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .nav-btn button {
+    font-size: 0.8em;
+    padding: 0.75rem 3rem 0.75rem 3rem;
+  }
+
+  main {
+    background-image: url(./images/bg-hero-desktop.svg);
+  }
+
+  .landing-page {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 100%;
+    padding: 2rem;
+    text-align: start;
+  }
+
+  .landing-image {
+    max-width: 100%;
+    margin-left: 5rem;
+  }
+
+  .landing-image img {
+    max-width: 1000px;
+  }
+
+  .landing-header {
+    margin-left: 1rem;
+  }
+
+  .landing-header h1 {
+    margin: 0;
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+  }
+
+  .landing-header p {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .main-btn {
+    font-size: 0.8em;
+  }
+
+  .features {
+    margin-top: 10rem;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    align-items: center;
+  }
+
+  .feature-card:nth-last-of-type(2) {
+    flex-direction: row;
+  }
+
+  .card-header {
+    width: 50%;
+    text-align: center;
+  }
+
+  .card-body {
+    width: 50%;
+    text-align: start;
+  }
+
+  .card-body h2 {
+    font-size: 1.4em;
+  }
+
+  .card-body p {
+    font-size: 0.9em;
+  }
+
+  .card-header img {
+    width: 70%;
+  }
+
+  .invitation {
+    bottom: -100px;
+  }
+
+  .invitations-card {
+    max-width: 800px;
+  }
+
+  .invitations-card h2 {
+    font-size: 1.8em;
+  }
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-container {
+    background-color: var(--very-dark-cyan);
+  }
+  .footer {
+    padding: 5rem;
+    padding-top: 10rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .footer-logo {
+    width: 15rem;
+  }
+
+  .contact-us {
+    width: 350px;
+    margin-right: 2rem;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    height: 130px;
+    margin-left: 3rem;
+  }
+
+  .footer-links p {
+    margin: 0;
+    margin-right: 5rem;
+  }
+
+  .footer-end {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+  }
+
+  .social i {
+    padding: 0.5rem;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  .social i:hover {
+    color: var(--pink);
+    border: 1px solid var(--pink);
+  }
+
+  .social i:nth-of-type(1) {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 1rem;
+  }
+
+  .copyright {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    justify-self: end;
+  }
+}
